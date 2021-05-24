@@ -1,5 +1,5 @@
 # Social Anxiety
-Mod 18 Challenge
+Mod. 18 Challenge - NoSQL: Social Network API
 
 ## Description:
 A social network that uses a NoSQL database. Doing so will allow the website to handle large amounts of unstructured data
