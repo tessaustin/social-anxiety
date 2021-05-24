@@ -13,15 +13,27 @@ const userSchema = new Schema({
         unique: true,
         match: [/.+@.+\..+/]
     },
-    thoughts: [{ type: Schema.Types.ObjectId, ref: 'Thought' }],
-    friends: [{ type: Schema.Types.ObjectId, ref: 'User' }]
+    thoughts: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Thought'
+        },
+    ],
+    friends: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'User'
+        },
+    ],
 },
     {
         toJSON: {
-            virtuals: true
+            virtuals: true,
+            getters: true,
         },
         id: false
-    });
+    }
+);
 
 // get total count of friends
 userSchema.virtual('friendCount').get(function () {
@@ -31,4 +43,5 @@ userSchema.virtual('friendCount').get(function () {
 // create the User model using the userSchema
 const User = model('User', userSchema);
 
+// export the model
 module.exports = User;
