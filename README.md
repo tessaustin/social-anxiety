@@ -14,6 +14,8 @@ A social network that uses a NoSQL database. Doing so will allow the website to 
 * [Questions](#questions)
 
 ## Usage:
+- Pt. 1 https://drive.google.com/file/d/1dp8mnFV1d5CykCt7b1dMJE88KB032CCX/view
+- Pt. 2 https://drive.google.com/file/d/1V1WeZzSaLNQyHugjaqehVTF57v4VRnav/view
 
 
 ## Technology:
